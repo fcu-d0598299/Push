@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.sendbird.android.sample">
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -25,40 +26,56 @@
         </activity>
         <activity android:name=".main.MainActivity"
             android:label="@string/select_channel_type"/>
+        <activity android:name=".main.BeaconMain"
+            android:label="掃描到的Beacon">
+
+        </activity>
         <activity
             android:name=".main.SettingsActivity"
-            android:label="@string/settings" />
+            android:label="@string/settings" >
+        </activity>
         <activity
             android:name=".main.BlockedMembersListActivity"
-            android:label="@string/blocked_members_list" />
+            android:label="@string/blocked_members_list" >
+        </activity>
 
-        <activity android:name=".utils.PhotoViewerActivity" />
+        <activity android:name=".utils.PhotoViewerActivity" >
+        </activity>
         <activity
             android:name=".utils.MediaPlayerActivity"
-            android:configChanges="orientation|screenSize" />
+            android:configChanges="orientation|screenSize" >
+        </activity>
         <activity
             android:name=".openchannel.CreateOpenChannelActivity"
             android:label="@string/create_open_channel"
-            android:windowSoftInputMode="stateVisible" />
+            android:windowSoftInputMode="stateVisible" >
+        </activity>
         <activity
             android:name=".groupchannel.InviteMemberActivity"
-            android:label="@string/invite_member" />
+            android:label="@string/invite_member" >
+        </activity>
         <activity
             android:name=".groupchannel.MemberListActivity"
-            android:label="@string/member_list" />
+            android:label="@string/member_list" >
+        </activity>
         <activity
             android:name=".groupchannel.MemberInfoActivity"
-            android:label="@string/member_info" />
+            android:label="@string/member_info" >
+        </activity>
         <activity
             android:name=".groupchannel.CreateGroupChannelActivity"
-            android:label="@string/create_group_channel" />
+            android:label="@string/create_group_channel" >
+        </activity>
         <activity
             android:name=".openchannel.ParticipantListActivity"
-            android:label="@string/participant_list" />
+            android:label="@string/participant_list" >
+        </activity>
         <activity android:name=".openchannel.OpenChannelActivity"
-            android:windowSoftInputMode="stateHidden" />
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
         <activity android:name=".groupchannel.GroupChannelActivity"
-            android:windowSoftInputMode="stateHidden" />
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
 
         <service android:name=".fcm.MyFirebaseMessagingService">
             <intent-filter>
@@ -70,6 +87,7 @@
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
+        <activity android:name="com.sendbird.android.sample.main.UIBeaconData" android:screenOrientation="portrait" />
 
     </application>
 
