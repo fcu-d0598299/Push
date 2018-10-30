@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+	<Space android:layout_width="match_parent" android:layout_height="3dp" />
+
+    <TextView
+        android:id="@+id/it3_text1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="#FFFFFFFF"
+        android:textStyle="bold"
+	/>
+
+    <Space android:layout_width="match_parent" android:layout_height="5dp" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:weightSum="720">
+
+        <TextView
+            android:id="@+id/tV"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:text="名稱"
+            android:textColor="#CCFFFFFF" />
+
+		<TextView
+			android:id="@+id/tV_mac"
+			android:layout_width="32dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="400"
+			android:textColor="#CCFFFFFF" />
+
+		<TextView
+			android:id="@+id/textView6"
+			android:layout_width="70dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="50"
+			android:text="Rssi :"
+            android:textColor="#CCFFFFFF"/>
+
+		<TextView
+			android:id="@+id/tV_rssi"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="400"
+			android:textColor="#CCFFFFFF"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="61dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="30dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="left|center_vertical"
+			android:paddingLeft="2dp"
+			android:singleLine="true"
+			android:text="電量 : "
+			android:textColor="#CCFFFFFF" />
+
+		<TextView
+			android:id="@+id/it3_text5"
+			android:layout_width="40dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:singleLine="true"
+			android:textColor="#CCFFFFFF" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:paddingLeft="2dp"
+			android:singleLine="true"
+			android:text="距離 : "
+			android:textColor="#CCFFFFFF" />
+
+		<TextView
+			android:id="@+id/it3_text7"
+			android:layout_width="79dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:singleLine="true"
+			android:textColor="#CCFFFFFF" />
+
+		<TextView
+			android:id="@+id/textView2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="狀態 : "
+            android:textColor="#CCFFFFFF"/>
+
+        <TextView
+            android:id="@+id/tV_condition"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+			android:textColor="#CCFFFFFF"/>
+
+		<RelativeLayout
+			android:layout_width="20dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">
+
+			<EditText
+				android:id="@+id/editname"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:ems="10"
+				android:inputType="textPersonName"
+				android:text="名稱" />
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+
